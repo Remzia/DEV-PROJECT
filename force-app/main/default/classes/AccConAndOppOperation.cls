@@ -5,13 +5,13 @@ public  class AccConAndOppOperation {
        system.debug('My list Account: ' + myListAccount );
        return myListAccount;
    }
-   
+   //FROM ONE BARANCH TO THE OTHER BRANCH
    public static void findOpp(string stageOppName, string leadSourceOppName){
 
     List<Opportunity> myListOpp = new List<Opportunity>();
     myListOpp = [SELECT Id, Name FROM Opportunity WHERE StageName =: stageOppName AND leadSource =: leadSourceOppName];
        system.debug('My list is ' + myListOpp);
-       
+     // update  
    }
    public static void PrintAccAndOppDetail(){
        List<Account> myListAcc = new List<Account>();
