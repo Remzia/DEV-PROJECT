@@ -1,3 +1,4 @@
+
 public  class Calculator {
     public decimal DynamicCalulationMethod(decimal a, decimal b, string oparation) {
 
